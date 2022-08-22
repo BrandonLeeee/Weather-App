@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Open+Sans&family=Roboto&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif
+}
+
+body {
+  max-width: 1280px;
+  display: grid;
+  background-color: #222222;
+  background-image: url(img/wave.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: 3px solid #ffae0086;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: whitesmoke;
+  border-radius: 10px;
+  text-align: left;
+  padding: 10px;
+  padding-right: 23px;
+  padding-left: 30px;
+  width: 200px;
+  box-shadow: 5px 4px 11px 3px #000;
+}
+
+span {
+  display: block;
+  font-size: 1.8rem;
+  color: #939393;
+  font-weight: 600;
+}
+
+.country {
+  background: #ffae00;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 0px 6px;
+  color: white;
+}
+
+.city-temp {
+  font-weight: bold;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.celsius {
+  font-size: 1.5rem;
+  margin-left: -9px;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  margin-top: 20px;
+  color: #939393;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: whitesmoke;
+  text-shadow: 3px 2px 4px #898887;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  gap: 20px;
+}
+
+#cityName {
+  font-size: 1rem;
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  text-transform: capitalize;
+}
+
+#btnEnter {
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #ffae00;
+  color: white;
+  font-weight: 700;
+  padding: 0px 15px;
+}
+
+#btnEnter:hover {
+  background-color: #ce8e03;
+  transition: linear 0.2s;
+}
+
+.hidden {
+  display: none;
+}
+
+.resultado {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.msgErro {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin: 15px 0px;
+}
+
+@media (max-width: 500px) {
+  body {
+    display: block;
+  }
+}

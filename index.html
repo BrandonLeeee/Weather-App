@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/cloudy.png" type="image/x-icon">
+  <title>Weather App</title>
+</head>
+
+<body>
+  <div class="main-content">
+    <h1>Weather App</h1>
+    <div class="container">
+      <input type="text" class="form__field" placeholder="Informe sua cidade" name="city" id='cityName'
+        autocomplete="off">
+      <button type="button" id="btnEnter">Pesquisar</button>
+    </div>
+    <span class="msgErro"></span>
+    <ul id="resultado" class="hidden">
+      <li>
+        <h2 class="city-name" data-name="${name},${sys.country}">
+          <span class="spanName"></span>
+          <sup class="country"></sup>
+        </h2>
+        <div class="city-temp"></div>
+        <figure>
+          <img class="city-icon" src="${icon}">
+          <figcaption></figcaption>
+        </figure>
+      </li>
+    </ul>
+  </div>
+
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
